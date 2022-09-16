@@ -1,0 +1,64 @@
+.modalContainer {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalView {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 50%;
+  height: 50vh;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.modalHeader {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: end;
+}
+
+.fadeOut {
+  animation: fadeOut 0.3s ease;
+}
+
+.closeButton {
+  border: none;
+  background-color: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #999;
+}
+
+.closeButton:hover {
+  color: black;
+}
+
+@keyframes fadeOut {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
